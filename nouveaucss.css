@@ -1,0 +1,769 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    color: white;
+    padding: 10px 30px;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 150px;
+    /* Ajustez selon la taille du logo */
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.links a:hover {
+    color: #f5f24c;
+}
+
+/* Styles pour le menu déroulant */
+.dropdown {
+    position: relative;
+    /* Permet au menu déroulant d'être positionné par rapport à ce parent */
+}
+
+/* Menu déroulant (caché par défaut) */
+.dropdown-content {
+    display: none;
+    /* Masqué par défaut */
+    position: absolute;
+    top: 100%;
+    /* Placer le menu en dessous de l'élément parent */
+    left: 0;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 20px;
+    /* Largeur du menu */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+    border-radius: 20px;
+}
+
+/* Afficher le menu déroulant lors du survol ou du clic */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.vidéo-bannière {
+    margin-top: 70px;
+    /* Décalage pour la barre de navigation */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.vidéoclass {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+@media (max-width: 768px) {
+    .vidéoclass {
+        display: none;
+    }
+}
+h1,
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #010100;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.basdepage li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+    margin-top: 100px;
+    /* Décalage pour le header fixe */
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid #edde2f;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+    background-color: #e7f307;
+}
+
+h3:hover {
+    color: #8360c3;
+    text-decoration: underline;
+}
+
+h3:active {
+    text-decoration: #2ebf91;
+}
+
+h2 {
+    color: rgb(249, 241, 30);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(90deg, #8360c3, #2ebf91);
+    opacity: 0.97;
+    margin: 50px;
+}
+
+h4 {
+    font-style: italic;
+    color: rgb(166, 170, 174);
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #010100;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.basdepage,
+li {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 5%;
+}
+
+.pages2 {
+    color: #fefefe;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: top;
+    border: 2px solid #010101;
+    gap: 15%;
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two img {
+    width: 50px;
+    height: auto;
+}
+
+.début-chaine-3 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background: url("Première bannière.png") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.charteactuel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.charteactuel img {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.images-du-bas {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 70%;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .images-du-bas {
+        grid-template-columns: 1fr; 
+        width: 100%;
+        gap: 20px; 
+        justify-content: center; 
+        align-items: center; 
+        justify-items: center;
+    }
+}
+
+.débutchaine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.débutchaine img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.disposition {
+    display: flex;
+    /* Utilise flexbox pour la disposition */
+    justify-content: space-between;
+    /* Espace entre le texte et les images */
+    align-items: flex-start;
+    /* Aligner les éléments en haut */
+    gap: 80px;
+    /* Espace entre le texte et les images */
+    margin-top: 20px;
+    /* Marge au-dessus de la section */
+}
+    @media (max-width: 768px) {
+        .disposition {
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 0%;
+            justify-content: center; 
+            align-items: flex-start; 
+        }
+    }
+.disposition1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    .disposition1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.disposition2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+@media (max-width: 768px) {
+    .disposition2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.imagegundam {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.imagegundam img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .imagegundam img {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+.image-bestof {
+    width: 30%;
+    height: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.image-bestof img {
+        width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .image-bestof img {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+.explication-smash {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+}
+
+.explication-1 img,
+.explication-2 img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.explication-1 {
+    flex: 1;
+    width: 40%;
+}
+
+.explication-2 {
+    flex: 1;
+    width: 60%;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-gauche {
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 50%;
+    background-color: #b6acac;
+    border-radius: 10px;
+    padding: 10px
+}
+@media (max-width: 768px) {
+    .text-gauche {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.text-centre {
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #b6acac;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transform: scale(90%);
+}
+@media (max-width: 768px) {
+    .text-gauche {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+    @media (max-width: 768px) {
+        .disposition {
+            flex-wrap: wrap;
+            width: 100%;
+            gap: 0%;
+            justify-content: center; 
+            align-items: flex-start; 
+        }
+    }
+
+    .text-droite {
+        color: #000;
+        font-size: 120%;
+        text-align: right; 
+        width: 50%; 
+        margin-left: auto; 
+        background-color: #b6acac;
+        border-radius: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    @media (max-width: 768px) {
+        .text-droite {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+li {
+    color: rgb(252, 251, 251);
+}
+
+.sigmar-regular,
+h1 {
+    font-family: "Sigmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #010101;
+    font-size: 300%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body,
+html {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+}
+
+.pages :hover {
+    color: #c2e936;
+}
+
+.pages :visited {
+    color: #ffffff;
+}
+
+.pages :link {
+    color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    background-color: #010100;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.basdepage,
+li {
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 5%;
+}
+
+.bannière {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.vidéo-bannière {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.vidéoclass {
+    width: 100%;
+    height: auto;
+}
+
+td,
+th {
+    border: 1px solid chocolate;
+    padding: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead {
+    padding: 10px;
+}
+
+tbody {
+    padding: 50px;
+}
+
+tfoot {
+    padding: 20px;
+}
+
+.one {
+    color: rgb(209, 241, 28);
+    font-size: 2em;
+    text-align: center;
+    background-color: black;
+    padding: 80px;
+    background-image: url("videogames-web.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    opacity: 0.8;
+    width: 100%;
+}
+
+.pages {
+    color: #fefefe;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(videogames-web.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    border: 2px solid #010101;
+    border-radius: 10px;
+    gap: 15%;
+}
+
+.moodboard img {
+    object-fit: cover;
+    height: auto;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.moodboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chaineYTB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chaineYTB img {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid rgb(224, 159, 40);
+    border-radius: 10px;
+    flex-wrap: wrap;
+
+}
+
+fieldset {
+    background-color: #d1c7c7;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+    background-color: #b6acac;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.listejoueur {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.joueur {
+    height: 10%
+}
+
+.joueur img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.listeproduction {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;  
+}
+.productions {
+    height: 10%;
+}
+.productions img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;  
+}
+
+.texte {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.maillotOrdreDuMasque {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.maillotODM {
+    height: 10%;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+
+}
+
+.maillotODM img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.twitter {
+    display: flex;
+    justify-content: center;
+}
+.twitter img {
+    width: 25%;
+    height: auto;
+    border-radius: 30px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Accueil – ODM industries</title>
+    <link rel="stylesheet" href="nouveaucss.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <!-- Logo à gauche -->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="AA ODM.png" alt="Logo de l'ODM">
+                </a>
+            </div>
+
+            <!-- Liens vers les autres pages -->
+            <div class="links">
+                <div class="dropdown">
+                    <a href="Histoire du projet.html">Histoire de l'Ordre du Masque<a href="#" class="dropbtn"
+                            onclick="toggleDropdown()"></a>
+                        <div class="dropdown-content" id="dropdownMenu">
+                            <a href="Histoire du projet.html#monancre8">Origines du projet</a>
+                            <a href="Histoire du projet.html#monancre9">Charte Graphique</a>
+                            <a href="Histoire du projet.html#monancre10">Projet actuel</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <a href="Division esport.html">Division esport de l'ODM <a href="#" class="dropbtn"
+                            onclick="toggleDropdown()"></a>
+                        <div class="dropdown-content" id="dropdownMenu">
+                            <a href="Division esport.html#monancre3">Principe de compétition</a>
+                            <a href="Division esport.html#monancre4">Histoire de l'équipe</a>
+                            <a href="Division esport.html#monancre5">Maillots de l'ODM</a>
+                        </div>
+                </div>
+                <div class="dropdown">
+                    <a href="Réseaux et productions.html">Réseaux et productions de l'ODM <a href="#" class="dropbtn"
+                            onclick="toggleDropdown()"></a>
+                        <div class="dropdown-content" id="dropdownMenu">
+                            <a href="Réseaux et productions.html#monancre6">Productions</a>
+                            <a href="Réseaux et productions.html#monancre7">Autres productions</a>
+                            <a href="Réseaux et productions.html#monancre11">Réseaux</a>
+                        </div>
+                </div>
+            </div>
+
+            <!-- Barre de recherche à droite -->
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher...">
+            </div>
+        </div>
+
+        <!-- Vidéo de la bannière -->
+        <div class="vidéo-bannière">
+            <video class="vidéoclass" autoplay loop muted>
+                <source src="Untouchable - Valorant Edit.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+    <nav>
+        <div id="monancre"></div>
+        <h3>Bienvenue sur le Site de l'Ordre du masque !</h3>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Bienvenu sur notre site dédié à l'équipe esport l'ordre du masque.</h1>
+            <p>N'hésitez pas à naviguer entre les différentes pages du site
+                web pour découvrir tout ce qu'il y a à savoir sur ce projet.</p>
+        </section>
+
+        <section>
+            <h4>Quelques images d'illustrations : </h4>
+            <div class="moodboard">
+                <img src="Moodboard ODM.png">
+            </div>
+        </section>
+        <section>
+            <div id="monancre2"></div>
+            <H1>Formulaire de contact</H1>
+            <p>Pour envoyer un message aux administrateurs de l'ordre du masque, veuillez renseigner quelques
+                informations ci-dessous</p>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" name="nom" id="nom">
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" name="prenom" id="prenom">
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre souhait</legend>
+                    <p>
+                        Selectionnez la meilleure équipe de brest selon vous :
+                        <input type="radio" name="souhait" value="riche" id="riche"> <label for="riche">ODM</label>
+                        <input type="radio" name="souhait" value="celebre" id="celebre"> <label
+                            for="celebre">KGD</label>
+                        <input type="radio" name="souhait" value="intelligent" id="intelligent"> <label
+                            for="intelligent">F8</label>
+                        <input type="radio" name="souhait" value="autre" id="autre"> <label for="autre">CM</label>
+                    </p>
+                    <p>
+                        <label for="precisions">Si "Autre", veuillez préciser :</label>
+                        <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+                    </p>
+                </fieldset>
+                <input type="submit" value="envoyer">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="basdepage">
+            <li>Politique de confidentialité</li>
+            <li>Notre youtube : l'Ordre Du Masque</li>
+            <li>Notre compte Twitter : @OrdreDuMasque</li>
+            <li>Compte Twitch personnel de Oracle : Oracle_ODM</li>
+            <li>Tout droit réservé / 2019-2025</li>
+        </div>
+    </footer>
+</body>
+
+</html>
